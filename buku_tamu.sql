@@ -1,0 +1,12 @@
+
+CREATE DATABASE IF NOT EXISTS buku_tamu;
+USE buku_tamu;
+
+CREATE TABLE tamu (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    nama VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    pesan TEXT NOT NULL,
+    tanggal_dibuat DATETIME DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
